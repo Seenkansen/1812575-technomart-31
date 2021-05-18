@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Алёна](https://up.htmlacademy.ru/htmlcss/31/user/1812575).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/serj).
 
 ---
 
