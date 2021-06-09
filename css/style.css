@@ -11,10 +11,26 @@
   --basic-greenlight: #8ED78F;
   --basic-ylellowlight: #F9F5F0;
   --basic-greylight: #F1F5F7;
-  --basic-darkbluedark: #212A3A;
+  --basic-darklyblue: #212A3A;
   --special-green: #5FBB2D;
-  --special-greylight: #F3F7F9;
-  --special-grey: #C5C5C5;
+  --special-greylightly: #F3F7F9;
+  --special-silver: #C5C5C5;
+  --special-darklygrey: #0E121A;
+  --special-darkgrey: #121925;
+  --special-red: #CA2C37;
+  --special-darkred: #BA2732;
+  --special-greylight: #EAEAEA;
+  --special-darksilver: #A9A9A9;
+  --special-darkgreen: #367315;
+  --special-ylellow: #FFD180;
+  --special-greyblue: #405069;
+  --special-greenlight: #518534;
+  --special-black24: rgba(0, 0, 0, 0.24);
+  --special-white50: rgba(255, 255, 255, 0.5);
+  --special-white30: rgba(255, 255, 255, 0.3);
+  --special-greylight30: rgba(197, 197, 197, 0.3);
+  --special-grey30: rgba(169, 169, 169, 0.3);
+  --special-black15: rgba(0, 0, 0, 0.15);
 }
 
 .page-body {
@@ -51,12 +67,14 @@ img {
 }
 
 .main-header-logo {
-  background: var(--basic-red);
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  background-color: var(--basic-red);
+  box-shadow: inset 0 -5px 0 var(--special-black24);
 }
 
-.list {
+.clear-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .user-menu a {
@@ -64,14 +82,14 @@ img {
 }
 
 .site-search input {
-  background: none;
+  background-color: none;
   border: none;
-  outline:none;
+  outline: none;
 }
 
-.bookmarks a:focus,
+.bookmarks a:focus, 
 .basket a:focus {
-  background-color: #0e121a;
+  background-color: var(--special-darklygrey);
   opacity: 0.5;
 }
 
@@ -81,16 +99,16 @@ img {
 }
 
 .place-an-order a {
-  background: var(--basic-green);
+  background-color: var(--basic-green);
 }
 
 .place-an-order a:hover {
-  background: var(--special-green);
+  background-color: var(--special-green);
 }
 
 .place-an-order a:focus {
-  background: var(--basic-green);
-  color: rgba(255, 255, 255, 0.5);
+  background-color: var(--basic-green);
+  color: var(--special-white50);
 }
 
 .store-description {
@@ -101,16 +119,16 @@ img {
 }
 
 .contacts-phone {
-  background: var(--special-greylight);
+  background-color: var(--special-greylightly);
   color: var(--basic-red);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 21px;
   line-height: 30px;
   border: 3px solid var(--white);
 }
 
 .contacts-phone::before {
-  content: url("img/icon-phone.svg");
+  content: url("../img/icon-phone.svg");
 }
 
 .header-address {
@@ -118,26 +136,26 @@ img {
   color: var(--basic-blue);
 }
 
-.login-link,
+.login-link, 
 .registration-link {
   font-size: 21px;
   line-height: 21px;
-  background: var(--white);
+  background-color: var(--white);
 }
 
-.login-link:hover,
+.login-link:hover, 
 .registration-link:hover {
   color: var(--basic-red);
 }
 
-.login-link:focus,
+.login-link:focus, 
 .registration-link:focus {
   color: var(--special-grey);
 }
 
 .site-navigation {
-  background: var(--basic-blue);
-  box-shadow: inset 0px -5px 0px #293449;
+  background-color: var(--basic-blue);
+  box-shadow: inset 0 -5px 0 var(--basic-darkblue);
 }
 
 .site-navigation a {
@@ -145,11 +163,11 @@ img {
 }
 
 .site-navigation a:hover {
-  background: var(--basic-darkblue);
+  background-color: var(--basic-darkblue);
 }
 
 .site-navigation a:focus {
-  background: #121925;
+  background-color: var(--special-darkgrey);
   opacity: 0.5;
 }
 
@@ -160,57 +178,57 @@ img {
 }
 
 .navigation-services h3 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
 
 .navigation-services-materials {
-  background: var(--basic-ylellow);
+  background-color: var(--basic-ylellow);
 }
 
 .navigation-services-tool {
-  background: var(--basic-bluelight);
+  background-color: var(--basic-bluelight);
 }
 
 .navigation-services-technic {
-  background: var(--basic-lilac);
+  background-color: var(--basic-lilac);
 }
 
 .navigation-services-discounts {
-  background: var(--basic-greenlight);
+  background-color: var(--basic-greenlight);
 }
 
 .navigation-services-delivery {
-  background: var(--basic-ylellow);
+  background-color: var(--basic-ylellow);
 }
 
 .navigation-services-button {
   color: var(--white);
-  background: rgba(255, 255, 255, 0.3);
+  background-color: var(--special-white30);
   text-transform: uppercase;
 }
 
 .navigation-services-button:hover {
-  background: rgba(197, 197, 197, 0.3);
+  background-color: var(--special-greylight30);
 }
 
 .navigation-services-button:focus {
-  background: rgba(169, 169, 169, 0.3)
+  background-color: var(--special-grey30);
 }
 
 .services-catalog-hammer-drill {
-  background: url(img/hammer-drill.jpg) no-repeat;
+  background-color: url(../img/hammer-drill.jpg) no-repeat;
 }
 
 .services-catalog-drill {
-  background: url(img/drill.jpg) no-repeat;
+  background-color: url(../img/drill.jpg) no-repeat;
 }
 
-.services-catalog-hammer-drill h3,
+.services-catalog-hammer-drill h3, 
 .services-catalog-drill h3 {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 36px;
 }
@@ -218,65 +236,65 @@ img {
 .button {
   color: var(--white);
   text-transform: uppercase;
-  background: var(--basic-red);
+  background-color: var(--basic-red);
 }
 
 .button:hover {
-  background: #CA2C37;
+  background-color: var(--special-red);
 }
 
 .button:focus {
-  background: #BA2732;
+  background-color: var(--special-darkred);
 }
 
-
 .popular-wrapper {
-  background: var(--basic-ylellowlight);
+  background-color: var(--basic-ylellowlight);
 }
 
 .popular-wrapper h2 {
   font-size: 30px;
   line-height: 30px;
-  font-weight: normal;
+  font-weight: 400;
   text-transform: uppercase;
   color: var(--basic-blue);
 }
 
-.product-card,
+.product-card, 
 .manufacturers-cart {
   font-family: "PT Sans", Arial, sans-serif;
-  border: 1px solid #EAEAEA;
+  border: 1px solid var(--special-greylight);
 }
 
 .product-card:hover {
-filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+  margin: 50px;
+  box-shadow: 0 4px 20px var(--special-black15);
 }
 
 .manufacturers-cart:hover {
   background-size: 220px 145px;
-  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+  box-shadow: 0 4px 20px var(--special-black15);
 }
 
 .manufacturers-cart:focus {
   opacity: 0.5;
-  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+  box-shadow: 0 4px 20px var(--special-black15);
 }
 
 .product-list h3 {
-  font-weight: bold;
+  font-weight: 700;
   line-height: 20px;
 }
 
-.product-list del{
+.product-list del {
   font-size: 17px;
   line-height: 18px;
-  font-weight: bold;
-  color: #A9A9A9;
+  font-weight: 700;
+  color: var(--special-darksilver);
 }
 
 .price-button {
   font-family: "PT Sans", Arial, sans-serif;
-  background: var(--basic-red);
+  background-color: var(--basic-red);
   border: none;
   color: var(--white);
 }
@@ -287,18 +305,18 @@ filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  background: var(--basic-green);
-  box-shadow: inset 0px -3px 0px #367315;
+  background-color: var(--basic-green);
+  box-shadow: inset 0 -3px 0 var(--special-darkgreen);
   border: none;
   border-radius: 2px;
 }
 
 .buy-button:hover {
-  background: var(--special-green);
+  background-color: var(--special-green);
 }
 
 .buy-button:focus {
-  background: #518534;
+  background-color: var(--special-greenlight);
 }
 
 .bookmark-button {
@@ -307,7 +325,7 @@ filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
   line-height: 18px;
   text-transform: uppercase;
   color: var(--basic-blue);
-  background: none;
+  background-color: none;
   border: 3px solid var(--basic-green);
   border-radius: 2px;
 }
@@ -321,87 +339,91 @@ filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
 }
 
 .services {
-  background: var(--basic-greylight);
+  background-color: var(--basic-greylight);
 }
 
-.services p,
-.about-the-company p,
-.contacts-address p{
+.services p, 
+.about-the-company p, 
+.contacts-address p {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
 }
 
-.services h2,
-.about-the-company h2,
-.contacts-address  h2{
+.services h2, 
+.about-the-company h2, 
+.contacts-address h2 {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .services-button {
-  background: var(--basic-blue);
-  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
-  font-weight: bold;
+  color: var(--white);
+  border: none;
+  background-color: var(--basic-blue);
+  box-shadow: 0 1px 0 var(--basic-darkblue), inset 0 1px 0 var(--special-greyblue);
+  font-weight: 700;
   font-size: 21px;
   line-height: 30px;
 }
 
 .services-button:hover {
-  background: var(--basic-darkblue);
-  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+  background-color: var(--basic-darkblue);
+  box-shadow: 0 1px 0 var(--basic-darkblue), inset 0 1px 0 var(--special-greyblue);
 }
 
 .services-button:active {
-  color: var(--white);
-  box-shadow: 0px 1px 0px #FFFFFF, inset 0px 1px 0px #FFFFFF;
+  color: var(--basic-blue);
+  background-color: var(--white);
+  box-shadow: 0 1px 0 var(--white), inset 0 1px 0 var(--white);
   border: none;
 }
 
 .list-transport-companies li:before {
+  margin: 10px;
   content: "—";
   position: relative;
-  left: -12px;
+  left: -5px;
   color: var(--basic-red);
 }
 
 .main-footer {
-  background: var(--basic-blue);
+  background-color: var(--basic-blue);
 }
 
 .main-footer-logo {
-  background: var(--basic-red);
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  background-color: var(--basic-red);
+  box-shadow: inset 0 -5px 0 var(--special-black24);
 }
 
 .footer-navigation p {
-  color: var(--special-greylight);
+  color: var(--special-greylightly);
 }
 
 .footer-navigation-list a {
   color: var(--basic-greylight);
 }
 
-.footer-navigation-list a:hover,
-.footer-services-list a:hover,
+.footer-navigation-list a:hover, 
+.footer-services-list a:hover, 
 .link-htmlacademy a:hover {
   text-decoration: underline;
 }
 
-.footer-navigation-list a:focus,
+.footer-navigation-list a:focus, 
 .footer-services-list a:focus {
   text-decoration: none;
   opacity: 0.5;
 }
 
-.footer-services-list a,
+.footer-services-list a, 
 .link-htmlacademy a {
-  color: #FFD180;
+  color: var(--special-ylellow);
 }
 
 .footer-social {
-  background: var(--basic-darkblue);
+  background-color: var(--basic-darkblue);
   font-size: 16px;
   line-height: 18px;
   color: var(--white);
@@ -412,8 +434,8 @@ filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
   color: var(--basic-red);
 }
 
-.modal-username,
-.modal-email,
+.modal-username, 
+.modal-email, 
 .modal-textarea {
   border: 2px solid var(--special-grey);
   border-radius: 2px;
