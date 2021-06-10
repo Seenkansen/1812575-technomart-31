@@ -173,8 +173,6 @@ img {
 
 .navigation-services {
   color: var(--white);
-  font-size: 14px;
-  line-height: 18px;
 }
 
 .navigation-services h3 {
@@ -204,6 +202,8 @@ img {
 }
 
 .navigation-services-button {
+  font-size: 14px;
+  line-height: 18px;
   color: var(--white);
   background-color: var(--special-white30);
   text-transform: uppercase;
@@ -218,11 +218,11 @@ img {
 }
 
 .services-catalog-hammer-drill {
-  background-color: url(../img/hammer-drill.jpg) no-repeat;
+  background: url(../img/hammer-drill.jpg) no-repeat;
 }
 
 .services-catalog-drill {
-  background-color: url(../img/drill.jpg) no-repeat;
+  background: url(../img/drill.jpg) no-repeat;
 }
 
 .services-catalog-hammer-drill h3, 
@@ -234,6 +234,8 @@ img {
 }
 
 .button {
+  font-size: 14px;
+  line-height: 18px;
   color: var(--white);
   text-transform: uppercase;
   background-color: var(--basic-red);
@@ -251,11 +253,15 @@ img {
   background-color: var(--basic-ylellowlight);
 }
 
-.popular-wrapper h2 {
+.main-headings {
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.popular-wrapper h2,
+.services-description {
   color: var(--basic-blue);
 }
 
@@ -266,7 +272,6 @@ img {
 }
 
 .product-card:hover {
-  margin: 50px;
   box-shadow: 0 4px 20px var(--special-black15);
 }
 
@@ -292,23 +297,26 @@ img {
   color: var(--special-darksilver);
 }
 
-.price-button {
-  font-family: "PT Sans", Arial, sans-serif;
-  background-color: var(--basic-red);
-  border: none;
-  color: var(--white);
-}
-
-.buy-button {
-  font-family: "PT Sans", Arial, sans-serif;
-  color: var(--white);
+.product-button {
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  border: none;
+  color: var(--white);
+  border-radius: 2px;
+}
+
+.price-button {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  background-color: var(--basic-red);
+}
+
+.buy-button {
   background-color: var(--basic-green);
   box-shadow: inset 0 -3px 0 var(--special-darkgreen);
-  border: none;
-  border-radius: 2px;
 }
 
 .buy-button:hover {
@@ -320,14 +328,9 @@ img {
 }
 
 .bookmark-button {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
   color: var(--basic-blue);
-  background-color: none;
+  background-color: var(--white);
   border: 3px solid var(--basic-green);
-  border-radius: 2px;
 }
 
 .bookmark-button:hover {
@@ -347,15 +350,6 @@ img {
 .contacts-address p {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
-}
-
-.services h2, 
-.about-the-company h2, 
-.contacts-address h2 {
-  font-size: 30px;
-  line-height: 30px;
-  text-transform: uppercase;
-  font-weight: 400;
 }
 
 .services-button {
@@ -378,14 +372,6 @@ img {
   background-color: var(--white);
   box-shadow: 0 1px 0 var(--white), inset 0 1px 0 var(--white);
   border: none;
-}
-
-.list-transport-companies li:before {
-  margin: 10px;
-  content: "—";
-  position: relative;
-  left: -5px;
-  color: var(--basic-red);
 }
 
 .main-footer {
