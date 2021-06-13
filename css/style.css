@@ -406,10 +406,7 @@ img {
   line-height: 18px;
 }
 
-.sorting,
-.filter h2,
-.sorting h2,
-.filter-price {
+.sorting-wrapper {
   background-color: var(--special-grey);
   font-weight: 400;
   font-size: 13px;
@@ -436,12 +433,15 @@ img {
   border: none;
 }
 
-.filter fieldset {
+.clear-fieldset {
   margin: 0;
   padding: 0;
+  border: none;
+}
+
+.filter fieldset {
   font-size: 15px;
   line-height: 19px;
-  border: none;
 }
 
 .filter legend {
