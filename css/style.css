@@ -93,13 +93,15 @@ img {
 
 .main-navigation-wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .main-header-logo {
   background-color: var(--basic-red);
   box-shadow: inset 0 -5px 0 var(--special-black24);
   display: block;
-  padding: 12px 55px;
+  padding: 12px 56px 17px;
+  line-height: 0;
 }
 
 .clear-list {
@@ -421,6 +423,30 @@ img {
   border: 1px solid var(--special-greylight);
 }
 
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.product-card a {
+  order: 1;
+}
+
+.product-card del {
+  order: 2;
+}
+
+.product-card div {
+  margin: auto
+}
+
+.product-card h3 {
+  margin: 8px 0;
+}
+
 .product-card:hover,
 .manufacturers-card:hover {
   box-shadow: 0 4px 20px var(--special-black15);
@@ -457,6 +483,7 @@ img {
 }
 
 .product-button {
+  order: 2;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -471,6 +498,9 @@ img {
   font-size: 17px;
   font-weight: 700;
   background-color: var(--basic-red);
+  margin: 13px 34px 21px 45px;
+  height: 38px;
+  clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
 }
 
 .buy-button {
@@ -609,10 +639,12 @@ img {
 
 .sorting-wrapper-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .sorting-wrapper-item {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .button-sorting {
@@ -668,6 +700,7 @@ img {
 
 .pagination-list {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 48px;
   font-size: 13px;
   line-height: 18px;
@@ -707,15 +740,19 @@ img {
 
 .footer-navigation {
   display: grid;
-  grid-template-columns: max-content 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 546px;
+  grid-template-rows: 95px 1fr;
   height: 193px;
-  margin-bottom: 54px;
 }
 
 .main-footer-logo {
   background-color: var(--basic-red);
   box-shadow: inset 0 -5px 0 var(--special-black24);
+  display: block;
+  padding: 20px 41px 25px;
+  line-height: 0;
+  margin-right: 174px;
+  margin-bottom: 22px;
 }
 
 .footer-address,
@@ -733,6 +770,14 @@ img {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.footer-navigation-list {
+  margin-top: 37px;
+}
+
+.footer-services-list {
+  margin-left: 22px;
 }
 
 .footer-navigation-list a {
@@ -761,17 +806,19 @@ img {
   font-size: 16px;
   line-height: 18px;
   color: var(--white);
+  height: 107px;
 }
 
 .footer-social-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-content: space-between;
-  height: 107px;
+  padding-top: 35px;
 }
 
 .footer-social-icon {
+  display: flex;
   justify-self: center;
+  flex-wrap: wrap;
 }
 
 .link-htmlacademy a:focus {
