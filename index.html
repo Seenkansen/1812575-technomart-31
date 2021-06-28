@@ -22,9 +22,13 @@
             <img src="img/logo.svg" width="108" height="18" alt="Логотип интернет-магазина Техномарт">
           </a>
           <form class="site-search" action="#" method="get">
-            <label>
-              <input type="search" placeholder="Поиск:">
-            </label>
+            <input type="search" placeholder="Поиск:">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="white" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 
+                7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 
+                13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 
+                10.532 2 7.5 2Z"/>
+            </svg>
           </form>
           <ul class="clear-list user-menu">
             <li class="bookmarks">
@@ -54,7 +58,13 @@
           <p class="clear-p header-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
         </div>
         <div>
-          <a class="link login-link" href="blank.html">Войти</a>
+          <a class="link login-link" href="blank.html">Войти
+            <svg width="20" height="17" viewBox="0 0 20 17" fill="#C5C5C5" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z"/>
+              <path d="M16.1771 15.01H11.3895V17H16.1771C18.2514 17 19.0381 15.19 19.0619 13.974V3.028C19.0381 1.811 18.2514 0 16.1771 
+                0H11.3895V1.99H16.1771C16.9762 1.99 17.1219 2.671 17.1391 3.047V13.951C17.1229 14.327 16.9762 15.01 16.1771 15.01Z"/>
+            </svg>
+          </a>
           <a class="link registration-link" href="blank.html">Регистрация</a>
         </div>
       </div>
@@ -89,37 +99,42 @@
       <section class="navigation-services">
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="clear-list navigation-services-markup">
-          <li class="navigation-services-materials">
+          <li class="nav-services-card navigation-services-materials">
             <h3>Материалы</h3>
             <a class="link navigation-services-button" href="catalog.html">На любой вкус</a>
+            <p class="clear-p new-product">new</p>
           </li>
-          <li class="navigation-services-tool">
+          <li class="nav-services-card navigation-services-tool">
             <h3>Инструмент</h3>
             <a class="link navigation-services-button" href="catalog.html">На все случаи</a>
           </li>
-          <li class="navigation-services-technic">
+          <li class="nav-services-card navigation-services-technic">
             <h3>Техника</h3>
             <a class="link navigation-services-button" href="catalog.html">Для стройки</a>
           </li>
-          <li class="navigation-services-discounts">
+          <li class="nav-services-card navigation-services-discounts">
             <h3>Скидки 50%</h3>
             <a class="link navigation-services-button" href="catalog.html">На 350 товаров</a>
           </li>
-          <li class="navigation-services-delivery">
+          <li class="nav-services-card navigation-services-delivery">
             <h3>Доставка</h3>
             <a class="link navigation-services-button" href="blank.html">Бесплатно</a>
           </li>
           <li class="navigation-services-catalog">
             <ul class="clear-list services-catalog">
               <li class="services-catalog-hammer-drill">
-                <h3>Перфораторы</h3>
-                <p>Настоящие мужские игрушки</p>
-                <a class="link button" href="catalog.html">Открыть каталог</a>
+                <div class="services-catalog-content">
+                  <h3>Перфораторы</h3>
+                  <p class="clear-p">Настоящие мужские игрушки</p>
+                  <a class="link button" href="catalog.html">Открыть каталог</a>
+                </div>
               </li>
               <li class="services-catalog-drill visually-hidden">
-                <h3>Дрели</h3>
-                <p>Соседям на радость!</p>
-                <a class="link button" href="catalog.html">Открыть каталог</a>
+                <div class="services-catalog-content">
+                  <h3>Дрели</h3>
+                  <p class="clear-p">Соседям на радость!</p>
+                  <a class="link button" href="catalog.html">Открыть каталог</a>
+                </div>
               </li>
             </ul>
             <button class="button-back" type="button">Назад</button>
@@ -156,6 +171,7 @@
             <button class="product-button price-button" type="button">15500 Р.</button>
             <button class="visually-hidden product-button buy-button" type="button">Купить</button>
             <button class="visually-hidden product-button bookmark-button" type="button">В закладки</button>
+            <p class="clear-p new-product">new</p>
           </li>
           <li class="product-card">
             <a class="link" href="product.html">
@@ -180,6 +196,7 @@
             <button class="product-button price-button" type="button">12500 Р.</button>
             <button class="visually-hidden product-button buy-button" type="button">Купить</button>
             <button class="visually-hidden product-button bookmark-button" type="button">В закладки</button>
+            <p class="clear-p new-product">new</p>
           </li>
         </ul>
       </section>
@@ -236,12 +253,12 @@
       <div class="services-section container">
         <div class="services-section-heading">
           <h2 class="main-headings main-headings-black">Сервисы</h2>
-          <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
+          <p class="clear-p">Хороший интернет-магазин отличается от плохого не только ценами!<br>
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         </div>
         <ul class="clear-list services-list">
           <li>
-            <button class="services-button" type="button">Доставка</button>
+            <button class="services-button services-button-current" type="button">Доставка</button>
           </li>
           <li>
             <button class="services-button" type="button">Гарантия</button>
@@ -253,14 +270,14 @@
         <ul class="clear-list services-description">
           <li>
             <h3 class="main-headings">Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо<br>
+            <p class="clear-p">Мы с удовольствием доставим ваш товар прямо<br>
               к вашему подъезду совершенно бесплатно!<br>
               Ведь мы неплохо заработаем,<br>
               поднимая его на ваш этаж!</p>
           </li>
           <li class="visually-hidden">
             <h3 class="main-headings">Гарантия</h3>
-            <p>Если купленный у нас товар поломается или заискрит,
+            <p class="clear-p">Если купленный у нас товар поломается или заискрит,
               а также в случае пожара, спровоцированного его
               возгоранием, вы всегда можете быть уверены в нашей
               гарантии. Мы обменяем сгоревший товар на новый.
@@ -268,7 +285,7 @@
           </li>
           <li class="visually-hidden">
             <h3 class="main-headings">Кредит</h3>
-            <p>Залезть в долговую яму стало проще!
+            <p class="clear-p">Залезть в долговую яму стало проще!
               Кредитные консультанты придут вам на помощь.</p>
           </li>
         </ul>
@@ -277,10 +294,10 @@
     <div class="about-the-company-section container">
       <section class="about-the-company">
         <h2 class="main-headings main-headings-black">Компания «Техномарт»</h2>
-        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
+        <p class="clear-p">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
           ремонта и строительства не оставит равнодушными любителей сэкономить на<br>
           гастарбайтерах.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+        <p class="clear-p transport-companies">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
           Техномарт работает со многими транспортными компаниями:</p>
         <ul class="clear-list list-transport-companies">
           <li>Деловые линии</li>
@@ -291,7 +308,7 @@
       </section>
       <section class="contacts-address">
         <h2 class="main-headings main-headings-black">Контакты</h2>
-        <p>Вы можете забрать товар сами,<br>
+        <p class="clear-p">Вы можете забрать товар сами,<br>
           заехав в наш офис:</p>
         <img src="img/map.png" width="300" height="158" alt="Карта">
         <a class="link button" href="blank.html">Заблудились? Напишите нам!</a>
@@ -348,13 +365,13 @@
           Все права защищены</p>
         <ul class="clear-list footer-social-icon">
           <li>
-            <a class="link social-button" href="#">Вконтакте</a>
+            <a class="link social-button social-button-vkontakte" href="#"></a>
           </li>
           <li>
-            <a class="link social-button" href="#">Фейсбук</a>
+            <a class="link social-button social-button-facebook" href="#"></a>
           </li>
           <li>
-            <a class="link social-button" href="#">Инстаграм</a>
+            <a class="link social-button social-button-instagram" href="#"></a>
           </li>
         </ul>
         <ul class="clear-list link-htmlacademy">
