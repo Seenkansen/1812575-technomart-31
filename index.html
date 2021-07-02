@@ -33,12 +33,12 @@
           <ul class="clear-list user-menu">
             <li class="bookmarks">
               <a class="link" href="#">
-                <span>Закладки</span>
+                <span>Закладки: 0</span>
               </a>
             </li>
             <li class="basket">
               <a class="link" href="#">
-                <span>Корзина</span>
+                <span>Корзина: 0</span>
               </a>
             </li>
             <li class="place-an-order">
@@ -157,8 +157,10 @@
             </div>
             <del>32500 Р.</del>
             <button class="product-button price-button" type="button">25500 Р.</button>
-            <button class="visually-hidden product-button buy-button" type="button">Купить</button>
-            <button class="visually-hidden product-button bookmark-button" type="button">В закладки</button>
+            <div class="product-button-hover">
+              <button class="product-button buy-button" type="button">Купить</button>
+              <button class="product-button bookmark-button" type="button">В закладки</button>
+            </div>
           </li>
           <li class="product-card">
             <a class="link" href="product.html">
@@ -169,8 +171,10 @@
             </div>
             <del>22500 Р.</del>
             <button class="product-button price-button" type="button">15500 Р.</button>
-            <button class="visually-hidden product-button buy-button" type="button">Купить</button>
-            <button class="visually-hidden product-button bookmark-button" type="button">В закладки</button>
+            <div class="product-button-hover">
+              <button class="product-button buy-button" type="button">Купить</button>
+              <button class="product-button bookmark-button" type="button">В закладки</button>
+            </div>
             <p class="clear-p new-product">new</p>
           </li>
           <li class="product-card">
@@ -182,8 +186,10 @@
             </div>
             <del>30500 Р.</del>
             <button class="product-button price-button" type="button">25500 Р.</button>
-            <button class="visually-hidden product-button buy-button" type="button">Купить</button>
-            <button class="visually-hidden product-button bookmark-button" type="button">В закладки</button>
+            <div class="product-button-hover">
+              <button class="product-button buy-button" type="button">Купить</button>
+              <button class="product-button bookmark-button" type="button">В закладки</button>
+            </div>
           </li>
           <li class="product-card">
             <a class="link" href="product.html">
@@ -194,8 +200,10 @@
             </div>
             <del>22500 Р.</del>
             <button class="product-button price-button" type="button">12500 Р.</button>
-            <button class="visually-hidden product-button buy-button" type="button">Купить</button>
-            <button class="visually-hidden product-button bookmark-button" type="button">В закладки</button>
+            <div class="product-button-hover">
+              <button class="product-button buy-button" type="button">Купить</button>
+              <button class="product-button bookmark-button" type="button">В закладки</button>
+            </div>
             <p class="clear-p new-product">new</p>
           </li>
         </ul>
@@ -268,25 +276,26 @@
           </li>
         </ul>
         <ul class="clear-list services-description">
-          <li>
+          <li class="services-description-delivery">
             <h3 class="main-headings">Доставка</h3>
             <p class="clear-p">Мы с удовольствием доставим ваш товар прямо<br>
               к вашему подъезду совершенно бесплатно!<br>
               Ведь мы неплохо заработаем,<br>
               поднимая его на ваш этаж!</p>
           </li>
-          <li class="visually-hidden">
+          <li class="services-description-пuarantee visually-hidden">
             <h3 class="main-headings">Гарантия</h3>
-            <p class="clear-p">Если купленный у нас товар поломается или заискрит,
-              а также в случае пожара, спровоцированного его
-              возгоранием, вы всегда можете быть уверены в нашей
-              гарантии. Мы обменяем сгоревший товар на новый.
+            <p class="clear-p">Если купленный у нас товар поломается или заискрит,<br>
+              а также в случае пожара, спровоцированного его<br>
+              возгоранием, вы всегда можете быть уверены в нашей<br>
+              гарантии. Мы обменяем сгоревший товар на новый.<br>
               Дом уж восстановите как-нибудь сами.</p>
           </li>
-          <li class="visually-hidden">
+          <li class=" services-description-credit visually-hidden">
             <h3 class="main-headings">Кредит</h3>
-            <p class="clear-p">Залезть в долговую яму стало проще!
+            <p class="clear-p">Залезть в долговую яму стало проще!<br>
               Кредитные консультанты придут вам на помощь.</p>
+            <a class="link button" href="blank.html">Отправить заявку</a>
           </li>
         </ul>
       </div>
@@ -310,7 +319,9 @@
         <h2 class="main-headings main-headings-black">Контакты</h2>
         <p class="clear-p">Вы можете забрать товар сами,<br>
           заехав в наш офис:</p>
-        <img src="img/map.png" width="300" height="158" alt="Карта">
+        <a class="link main-map" href="https://yandex.ru/maps">
+          <img src="img/map.png" width="300" height="158" alt="Карта">
+        </a>
         <a class="link button" href="blank.html">Заблудились? Напишите нам!</a>
       </section>
     </div>
